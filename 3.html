@@ -1,0 +1,68 @@
+<!-- 3. Design a contact us form with all fields as required. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us Form</title>
+    <style>
+      form {
+        width: 50%;
+        margin: auto;
+      }
+      label {
+        width: 100%;
+        display: block;
+        padding: 5px 0;
+      }
+
+      .form-group {
+        padding: 10px;
+      }
+      .form-control {
+        width: 100%;
+        height: 35px;
+        display: block;
+        border-radius: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+      }
+      textarea.form-control {
+        height: auto;
+      }
+      .center {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <form>
+        <div class="form-group">
+          <label> First Name </label>
+          <input type="text" class="form-control" id="firstName" required />
+        </div>
+        <div class="form-group">
+          <label> Last Name </label>
+          <input type="text" class="form-control" id="lastName" required />
+        </div>
+        <div class="form-group">
+          <label> Email Address </label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="form-group">
+          <label> Message </label>
+          <textarea
+            class="form-control"
+            required
+            rows="10"
+            cols="100"
+          ></textarea>
+        </div>
+        <div class="form-group center">
+          <input type="submit" class="btn primary-btn" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
